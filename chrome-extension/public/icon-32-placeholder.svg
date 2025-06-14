@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M16 2 L26 6 L26 16 Q26 24 16 30 Q6 24 6 16 L6 6 Z" fill="#1e40af" stroke="#1e3a8a" stroke-width="1"/>
+  
+  <!-- RV letters -->
+  <text x="16" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">RV</text>
+  
+  <!-- CAPTCHA symbol -->
+  <circle cx="16" cy="8" r="2" fill="#fbbf24" opacity="0.8"/>
+  <rect x="14" y="24" width="4" height="2" fill="#10b981" rx="1"/>
+</svg>

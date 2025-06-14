@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M64 8 L104 24 L104 64 Q104 96 64 120 Q24 96 24 64 L24 24 Z" fill="#1e40af" stroke="#1e3a8a" stroke-width="2"/>
+  
+  <!-- Inner shield -->
+  <path d="M64 16 L96 28 L96 60 Q96 84 64 104 Q32 84 32 60 L32 28 Z" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+  
+  <!-- RV letters -->
+  <text x="64" y="75" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="white">RV</text>
+  
+  <!-- CAPTCHA symbols -->
+  <circle cx="64" cy="35" r="6" fill="#fbbf24" opacity="0.9"/>
+  <rect x="58" y="95" width="12" height="6" fill="#10b981" rx="3"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="45" cy="45" r="2" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="83" cy="45" r="2" fill="#fbbf24" opacity="0.6"/>
+</svg>
