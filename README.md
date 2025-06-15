@@ -117,27 +117,84 @@ Agentic CAPTCHA Solver allows you to configure different LLM models for each age
   - **Qwen 2.5 Coder 14B**
   - **Mistral Small 24B**
 
-## 💡 Supported CAPTCHA Types
+## 🎯 Core Modules and Functional Flow
 
-The extension can handle various CAPTCHA challenges:
+### 1. CAPTCHA Input Module
+**Function**: Accepts CAPTCHA inputs from real-world applications or manually uploaded samples.
 
-1. **Text-based CAPTCHAs**:
-   - Distorted text recognition
-   - Mathematical problems
-   - Simple questions
+**Types Supported**:
+- **Text-based CAPTCHAs**: Distorted alphanumeric images, mathematical problems, simple questions
+- **Image-based CAPTCHAs**: Object identification (e.g., "click all bicycles"), pattern matching, visual puzzles
+- **Audio-based CAPTCHAs**: Speech-to-text decoding, audio pattern recognition
+- **Interactive CAPTCHAs**: Click-based verification, drag and drop puzzles, slider challenges
 
-2. **Image Recognition**:
-   - Object identification
-   - Pattern matching
-   - Visual puzzles
+### 2. AI-Based Solver Engine
+**Function**: Uses LLMs and specialized AI tools to attempt solving CAPTCHAs.
 
-3. **Interactive Challenges**:
-   - Click-based verification
-   - Drag and drop puzzles
+**Approach**:
+- **OCR APIs and custom models** for text CAPTCHAs
+- **Computer vision models** (CLIP, SAM, YOLO) for image CAPTCHAs
+- **Speech-to-text models** (Whisper, Google Speech API) for audio CAPTCHAs
+- **LLMs** for understanding CAPTCHA instructions and complex reasoning
+
+### 3. Logging & Evaluation System
+**Function**: Tracks each CAPTCHA solving attempt and records:
+- Input type and complexity level
+- Solved/failed status with detailed analysis
+- Time taken and confidence metrics
+- CAPTCHA characteristics (distortion, complexity, security features)
+- **Outcome**: Transparent tracking of AI performance across CAPTCHA types
+
+### 4. Security Analysis Engine
+**Function**: Assesses CAPTCHA resilience using AI-solving results and security metrics.
+
+**Analysis Metrics**:
+- Success rate vs complexity correlation
+- Time-to-break analysis and performance benchmarks
+- False positive/negative behavior patterns
+- Entropy and variation in challenge generation
+- **AI Assist**: LLMs generate natural language analysis and risk commentary
+
+### 5. Security Scoring System
+**Function**: Assigns numeric security scores (0–100) based on:
+- Resistance to AI solving attempts
+- Variation and unpredictability in generation
+- Multimodal complexity and security features
+- **Method**: Weighted scoring using solving statistics and security heuristics
+
+### 6. Recommendations Generator
+**Function**: Automatically suggests CAPTCHA design improvements using LLM analysis.
+
+**Examples**:
+- "Use randomized word distortions with noise overlays"
+- "Replace static audio with dynamically generated speech including accents"
+- "Increase object diversity in image-based CAPTCHAs"
+- "Implement partial object occlusion and ambiguous boundaries"
+
+## 🔐 Real-World Application Testing & Ethics
+
+**Scope**: Test publicly available CAPTCHAs in sandboxed environments or controlled research settings.
+
+**Ethics**:
+- Follow responsible disclosure guidelines for any vulnerabilities discovered
+- Focus on academic security analysis and research, not exploitation
+- Respect website terms of service and implement appropriate rate limiting
+- Contribute findings to the security research community for CAPTCHA improvements
+
+## 📊 Security Analysis Outputs
+
+The extension generates comprehensive security analysis reports including:
+
+- **Security scorecards** per CAPTCHA type with detailed metrics
+- **PDF/CSV reports** summarizing analysis findings and recommendations
+- **AI-generated design recommendations** for enhanced CAPTCHA security
+- **Performance benchmarks** comparing AI solving effectiveness across CAPTCHA types
+- **Vulnerability assessments** with specific improvement suggestions
 
 ## 🔒 Security & Privacy
 
-- **Local Processing**: All CAPTCHA solving happens in your browser
-- **No Data Collection**: We don't collect or store any personal information
+- **Local Processing**: All CAPTCHA solving and analysis happens in your browser
+- **No Data Collection**: We don't collect or store any personal information or CAPTCHA data
 - **API Key Security**: Your LLM API keys are stored locally and never transmitted to our servers
-- **Open Source**: Full transparency with publicly available source code
+- **Research Ethics**: Built-in safeguards ensure responsible security research practices
+- **Open Source**: Full transparency with publicly available source code for security verification

@@ -1,7 +1,7 @@
 {
   "extensionDescription": {
     "description": "Extension description",
-    "message": "Solve CAPTCHAs automatically with AI! Agentic CAPTCHA Solver is an intelligent Chrome extension that handles various CAPTCHA challenges."
+    "message": "AI-powered CAPTCHA solving and security analysis tool. Conducts comprehensive security research on CAPTCHA systems using advanced AI techniques for academic and security improvement purposes."
   },
   "extensionName": {
     "description": "Extension name",
