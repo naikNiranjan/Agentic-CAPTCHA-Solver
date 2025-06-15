@@ -14,10 +14,8 @@ Agentic CAPTCHA Solver is an intelligent Chrome extension that automatically sol
 
 Tired of manually solving CAPTCHAs that interrupt your browsing experience? **Agentic CAPTCHA Solver** delivers intelligent automation while keeping you in complete control:
 
-- **100% Free** - No subscription fees or hidden costs. Just install and use your own API keys.
 - **Privacy-Focused** - Everything runs in your local browser. Your data stays with you, never shared with any cloud service.
 - **Flexible LLM Options** - Connect to your preferred LLM providers with the freedom to choose different models for different agents.
-- **Fully Open Source** - Complete transparency in how CAPTCHAs are solved. No black boxes or hidden processes.
 
 > **Note:** We currently support OpenAI, Anthropic, Gemini, Ollama, Groq, Cerebras and custom OpenAI-Compatible providers.
 
@@ -91,18 +89,18 @@ Tired of manually solving CAPTCHAs that interrupt your browsing experience? **Ag
 Agentic CAPTCHA Solver allows you to configure different LLM models for each agent to balance performance and cost. Here are recommended configurations:
 
 ### Better Performance
-- **Planner & Validator**: Claude 3.7 Sonnet
+- **Planner & Validator**: 
   - Better reasoning and planning capabilities
   - More reliable CAPTCHA analysis
-- **Navigator**: Claude 3.5 Haiku
+- **Navigator**: 
   - Efficient for web navigation tasks
   - Good balance of performance and cost
 
 ### Cost-Effective Configuration
-- **Planner & Validator**: Claude Haiku or GPT-4o
+- **Planner & Validator**: 
   - Reasonable performance at lower cost
   - May require more iterations for complex CAPTCHAs
-- **Navigator**: Gemini 2.0 Flash or GPT-4o-mini
+- **Navigator**: 
   - Lightweight and cost-efficient
   - Suitable for basic navigation tasks
 
@@ -111,11 +109,7 @@ Agentic CAPTCHA Solver allows you to configure different LLM models for each age
   - Use Ollama or other custom OpenAI-compatible providers to run models locally
   - Zero API costs and complete privacy with no data leaving your machine
 
-- **Recommended Models**:
-  - **Qwen3 14B**
-  - **Falcon3 10B**
-  - **Qwen 2.5 Coder 14B**
-  - **Mistral Small 24B**
+
 
 ## 🎯 Core Modules and Functional Flow
 
@@ -197,4 +191,3 @@ The extension generates comprehensive security analysis reports including:
 - **No Data Collection**: We don't collect or store any personal information or CAPTCHA data
 - **API Key Security**: Your LLM API keys are stored locally and never transmitted to our servers
 - **Research Ethics**: Built-in safeguards ensure responsible security research practices
-- **Open Source**: Full transparency with publicly available source code for security verification
